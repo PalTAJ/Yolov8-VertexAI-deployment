@@ -10,3 +10,13 @@ Deploying a YOLOv8 model on Google Cloud Platform (GCP) using Vertex AI involves
 4. Upload the Model to Vertex AI Model Registry
 5. Deploy the Model on Vertex AI for Online Predictions
 
+
+Helping commands (avaiable in article):
+To build the image run the following command on the terminal on workbench:
+```
+docker build -t gcr.io/{PROJECT ID}/{IMAGE NAME} .
+```
+after the build is done, we need to push the image to Container Registry using this command:
+```
+docker push gcr.io/{PROJECT ID}/{IMAGE NAME}
+```
